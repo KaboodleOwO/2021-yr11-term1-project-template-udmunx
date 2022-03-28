@@ -1,0 +1,73 @@
+
+.box {
+    padding: 10px;
+    border-style: solid;
+    border-color: gold;
+    margin:2px;
+    width:90%;
+}
+a:link {
+  color: coral;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+}
+#dashboard{
+    font-size:80px;
+    margin:auto;
+    color:black;
+    text-align: center;
+    
+}
+#dash{
+    text-align:center;
+    box-shadow:none;
+    background-color:#fafafa;
+    margin:auto;
+}
+
+#LES{
+    font-size:25px;
+    width:300px;
+    margin:auto;
+    background-color:rgb(164, 231, 240);
+    color:black;
+    border-radius:10px;
+    text-align:center;
+}
+#box{
+    font-size:19px;
+    width:270px;
+    margin:auto;
+    background-color:rgb(227,239,240);
+    color:black;
+    border-radius:10px;
+    text-align:left;
+}
+#full{
+    font-size:25px;
+}
+#exp{
+    font-size:26px;
+    width:220px;
+    margin:auto;
+    background-color:rgb(235, 195, 195);
+    color:red;
+    border-radius:10px;
+    text-align:center;
+
+}
+
+#editbutton{
+    font-size:15px;
+    width:50px;
+    text-align:center;
+    margin-left:100px;
+}

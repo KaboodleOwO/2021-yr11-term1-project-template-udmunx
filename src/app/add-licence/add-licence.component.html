@@ -1,0 +1,55 @@
+<mat-card>
+  <mat-card-title> Register Employee </mat-card-title>
+
+</mat-card>
+<br>
+
+<mat-card>
+<mat-card-title> Employee Details </mat-card-title>
+<mat-card-content>
+<mat-divider inset></mat-divider>
+  <form>
+  
+<br>
+  <mat-form-field appearance="legacy" >
+    <mat-label>First Name</mat-label>
+    <input  matInput placeholder="Enter First Name" [formControl]="firstName" required >
+  </mat-form-field>
+
+  
+  <p>
+  <mat-form-field appearance="legacy" >
+  <mat-label>Last Name</mat-label>
+  <input  matInput placeholder="Enter Last Name" [formControl]="lastName" required >
+</mat-form-field>
+  </p>
+  <mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Date of Birth</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker">
+    <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+  </mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+  </form>
+</mat-card-content>
+</mat-card>
+<br>
+<mat-card>
+<mat-card-title> License Details </mat-card-title>
+<mat-card-content>
+
+
+<div class="example-container">
+<mat-form-field appearance="legacy">
+  <mat-label>Enter License number</mat-label>
+  <input matInput placeholder="License number" [formControl]="email" required>
+  <mat-error *ngIf="email.invalid">{{getErrorMessage3()}}</mat-error>
+</mat-form-field>
+</div>
+  <p>
+    
+</mat-card-content>
+</mat-card>
+
+<p>

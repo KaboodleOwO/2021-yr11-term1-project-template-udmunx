@@ -1,0 +1,63 @@
+<section>
+  <mat-sidenav-container hasBackdrop="true">
+    <mat-sidenav #snav mode="'over'" [fixedInViewport]="true">
+      <!--MENU ITEMS =====================1=============  -->
+      <mat-nav-list>
+        <mat-list-item routerLink="/home" (click)="close()">
+          <mat-icon matListIcon>menu</mat-icon>
+          Dashboard 
+        </mat-list-item>
+
+        <mat-list-item routerLink="/add" (click)="close()">
+          <mat-icon matListIcon>add</mat-icon>
+          Add Employee
+        </mat-list-item>
+
+        <mat-list-item routerLink="/employee" (click)="close()">
+          <mat-icon matListIcon>worker</mat-icon>
+          Employee List
+        </mat-list-item>
+
+        <mat-list-item routerLink="/login" (click)="close()">
+          <mat-icon matListIcon>login</mat-icon>
+          Login
+        </mat-list-item>
+
+        <mat-list-item (click)="snav.close()">
+          <mat-icon matListIcon>cancel</mat-icon>
+          Close
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <!-- ROUTER -->
+      <router-outlet></router-outlet>
+      <!-- end router -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!----------TOP NAV BAR----------->
+  <mat-toolbar class="topBar">
+    <div fxHide.gt-xs>
+      <button mat-icon-button (click)="snav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div fxFlex></div>
+    <div fxFlex>company name</div>
+    <div fxFlex></div>
+    <div fxHide.xs>
+      <!--menu component-->
+    </div>
+  </mat-toolbar>
+  <!-- end top nav bar-->
+
+  <!---------FOOTER------------->
+  <mat-toolbar class="footer">
+    <div class="footerMenu">© Bradfield College 2022</div>
+  </mat-toolbar>
+  <!-- end footer-->
+
+  <section></section>
+</section>
